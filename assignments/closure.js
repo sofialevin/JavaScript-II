@@ -1,6 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function increase() {
+  let num1 = 0;
+  function add(num2) {
+    num1 = num1 + num2
+    return num1
+  }
+  return add
+}
+
+const increment = increase();
+
+const c1 = increment(2)
+const c2 = increment(3)
+const c3 = increment(5)
+
+console.log(c1, c2, c3)
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
